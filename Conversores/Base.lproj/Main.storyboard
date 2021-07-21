@@ -46,12 +46,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperatura" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="usz-6N-kte">
-                                        <rect key="frame" x="23" y="70" width="332" height="42"/>
-                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="34"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZZl-6d-lBE">
                                         <rect key="frame" x="357" y="70" width="34" height="42"/>
                                         <constraints>
@@ -66,6 +60,12 @@
                                             <action selector="showNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="umh-QG-zlh"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Temperatura" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="usz-6N-kte">
+                                        <rect key="frame" x="94" y="70" width="227" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="34"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.22745098039215686" green="0.52156862745098043" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -88,7 +88,7 @@
                                     <constraint firstAttribute="bottom" secondItem="lAI-Lz-AKR" secondAttribute="bottom" constant="31" id="vDd-SB-NUP"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2V9-yH-S8u">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="2V9-yH-S8u">
                                 <rect key="frame" x="20" y="486" width="374" height="107"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                 <color key="textColor" red="0.25490196078431371" green="0.56470588235294117" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -125,6 +125,7 @@
                         <outlet property="btUnit2" destination="aeO-fA-KU3" id="KW6-Zz-Mn8"/>
                         <outlet property="lbResult" destination="2V9-yH-S8u" id="LWE-8L-f9h"/>
                         <outlet property="lbResultUnit" destination="ub7-Ja-nUo" id="oMh-45-CeE"/>
+                        <outlet property="lbUnit" destination="usz-6N-kte" id="Ymo-rD-mbD"/>
                         <outlet property="tfValue" destination="SDK-LC-Bf8" id="kNf-zd-DgL"/>
                     </connections>
                 </viewController>
