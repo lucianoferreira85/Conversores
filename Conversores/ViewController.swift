@@ -65,6 +65,7 @@ class ViewController: UIViewController {
            calcDistance()
         }
         view.endEditing(true)
+        
         //Formatar o label do resultado para exibir 2 casas decimais
         let result = Double(lbResult.text!)!
         lbResult.text = String(format: "%.2f", result)
