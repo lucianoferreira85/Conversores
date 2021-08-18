@@ -93,6 +93,7 @@ class ViewController: UIViewController {
         }
     }
     
+    
     func calcCurrency() {
         guard let currency = Double(tfValue.text!) else {return}
         if btUnit1.alpha == 1.0 {
